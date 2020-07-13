@@ -55,7 +55,7 @@
 			heart.src = "images/lostHeart.png";
 			tries.className = "fails";
 		}
-		if (this.missed >= 5) {
+		if (this.missed === 5) {
 			this.gameOver();
 		}
 	}
