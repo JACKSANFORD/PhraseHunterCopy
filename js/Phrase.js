@@ -10,8 +10,9 @@
  	//Display phrase on game board
  	addPhraseToDisplay() {
  		const ul = document.getElementById('phrase').firstElementChild;
- 		[...this.phrase].map((character) => {
- 			const li = document.createElement('li');
+ 		for (let i = 0; i < this.phrase.length; i++) {
+			 const li = document.createElement('li');
+			 let character = this.phrase[i];
  			if (character != ' ') {
  				li.className = `hide letter ${character}`;
 	 			li.innerText = character;
@@ -21,7 +22,7 @@
 	 			li.innerText = ' ';
 	 			ul.appendChild(li);
 	 		}
- 		 });
+ 		 }
 	 }
 
 	//Checks if passed letter is in phrase
