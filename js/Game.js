@@ -101,10 +101,10 @@
 		let chosen = document.querySelectorAll(".chosen");
 		let wrong = document.querySelectorAll(".wrong");
 		let heart = document.querySelectorAll(".fails");
-		console.log(heart);
 
 		//remove all li elements from the phrase ul element
 		ul.innerHTML = "";
+		this.missed = 0;
 
 		//enable all onscreen keyboard elements
 		for (let i = 0; i < chosen.length; i++) {
@@ -120,7 +120,7 @@
 		//reset all heart images
     for (let i = 0; i < heart.length; i++) {
 			heart[i].className = "tries";
-			heart[i].src = "images/liveHeart.png";
+			heart[i].children[0].src = "images/liveHeart.png";
 		}
 	}
 }
