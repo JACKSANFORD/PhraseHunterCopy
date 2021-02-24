@@ -12,6 +12,11 @@
  			new Phrase('There is no trying'),
  			new Phrase('May the force be with you'),
  			new Phrase('You have to see the matrix for yourself'),
+			new Phrase('Im a cop you idiot'),
+ 			new Phrase('Its a learning computer'),
+ 			new Phrase('The bridge is out'),
+ 			new Phrase('There goes that man'),
+ 			new Phrase('Died and gone to heaven'),
  			new Phrase('You talking to me')
  		]
  		this.activePhrase = 'null';
